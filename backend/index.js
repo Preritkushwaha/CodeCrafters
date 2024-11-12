@@ -5,11 +5,11 @@ import cors from "cors";
 import axios from "axios";
 
 dotenv.config();
-const accountSid = process.env.accountSid;
-const authToken = process.env.authToken;
+const accountSid = "AC6fe2f8bb04acf3389b45ee150a411b1d";
+const authToken = "d0dc880a223913d3d8a7de80e7521b66";
 const client = twilio(accountSid, authToken);
 console.log(authToken);
-const Port = process.env.port;
+const Port = 8000;
 const app = express();
 app.use(cors());
 app.listen(Port, () => {
